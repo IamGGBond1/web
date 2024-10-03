@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giraffe Digital Group</title>
+    <!-- 引入CSS样式 -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- 引入Three.js库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- 引入Tween.js库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
+    <!-- 传递变量给JavaScript -->
+    <script type="text/javascript">
+        const giraffeTextureUrl = "{{ url_for('static', filename='images/giraffe_texture1.png') }}";
+        const videoUrl = "{{ url_for('static', filename='videos/kah.mp4') }}";
+        const portfolioUrl = "{{ url_for('portfolio') }}";
+    </script>
+</head>
+<body>
+    <!-- 顶部动画区域 -->
+    <div class="hero">
+        <!-- Three.js 动画背景将在JavaScript中添加到此处 -->
+        <!-- 顶部内容 -->
+        <div class="content">
+            <h1>Giraffe Digital Group</h1>
+            <p>致力于成为全球领先的对冲基金</p>
+            <button id="enterButton">进入投资组合介绍</button>
+        </div>
+    </div>
+
+    <!-- 下方的额外内容 -->
+    <div class="additional-content">
+        <!-- ... 您的其他内容 ... -->
+    </div>
+
+    <!-- 引入JavaScript文件 -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

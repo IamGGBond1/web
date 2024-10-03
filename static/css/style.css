@@ -1,0 +1,78 @@
+/* 重置默认样式 */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* 顶部动画区域 */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* 占满视口高度 */
+    overflow: hidden;
+}
+
+/* Three.js canvas */
+.hero canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* 顶部内容的样式 */
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding-top: 20%;
+}
+
+.content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.content button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #ff6600;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.content button:hover {
+    background-color: #e65c00;
+}
+
+/* 额外内容的样式 */
+.additional-content {
+    padding: 50px;
+    background-color: #f5f5f5;
+}
+
+.additional-content section {
+    margin: 50px 0;
+}
+
+.additional-content h2 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.additional-content p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+}
