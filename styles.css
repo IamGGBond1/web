@@ -555,6 +555,42 @@ a.article-card:hover .article-card__cta {
   letter-spacing: 0.02em;
 }
 
+.article-subtitle-en {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--text-secondary);
+  margin: -8px 0 0;
+  letter-spacing: 0.01em;
+}
+
+.article-bilingual-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 48px 0 20px;
+}
+
+.article-bilingual-label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  margin: 0 0 20px;
+}
+
+.article-body--en {
+  letter-spacing: 0.01em;
+}
+
+.article-disclaimer {
+  font-size: 14px !important;
+  color: var(--text-secondary) !important;
+  margin-top: 2em !important;
+  padding-top: 1.25em;
+  border-top: 1px solid var(--border);
+}
+
 /* Articles index page title */
 .page-hero {
   padding: 48px 24px 32px;
