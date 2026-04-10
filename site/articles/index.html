@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Articles and perspectives from Giraffe Digital Group." />
+    <title>Articles — Giraffe Digital Group</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <a class="logo" href="../index.html">Giraffe Digital Group</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="../index.html#strategy">Strategy</a>
+          <a href="../index.html#perspectives">Perspectives</a>
+          <a href="index.html">Articles</a>
+          <a href="../index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="page-hero">
+      <h1>Articles</h1>
+      <p>Notes from our team. Replace placeholders with your own writing.</p>
+    </div>
+
+    <div class="articles-list">
+      <div class="article-grid">
+        <a class="article-card" href="subjective-timing-framework.html">
+          <span class="article-card__meta">Perspectives · Placeholder</span>
+          <h3 class="article-card__title">A framework for subjective timing</h3>
+          <p class="article-card__excerpt">
+            How we separate narrative from evidence when discretion is a
+            feature—not a bug—of the investment process.
+          </p>
+          <span class="article-card__cta">Read</span>
+        </a>
+        <a class="article-card" href="long-short-liquidity.html">
+          <span class="article-card__meta">Markets · Placeholder</span>
+          <h3 class="article-card__title">
+            Liquidity under stress in long-short books
+          </h3>
+          <p class="article-card__excerpt">
+            Why the “easy to trade” assumption deserves a second look when
+            correlations spike and funding tightens.
+          </p>
+          <span class="article-card__cta">Read</span>
+        </a>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <p>© <span id="year"></span> Giraffe Digital Group.</p>
+        <p class="footer__legal">
+          For information only. Not investment advice or an offer to invest.
+        </p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

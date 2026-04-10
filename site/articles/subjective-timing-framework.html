@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A framework for subjective timing — Giraffe Digital Group</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <a class="logo" href="../index.html">Giraffe Digital Group</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="../index.html#strategy">Strategy</a>
+          <a href="index.html">Articles</a>
+          <a href="../index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <article class="article-page">
+      <a class="back-link" href="index.html">← All articles</a>
+      <header>
+        <p class="article-meta">Perspectives · Placeholder · Replace with your date</p>
+        <h1>A framework for subjective timing</h1>
+      </header>
+      <div class="article-body">
+        <p>
+          This is a <strong>sample article page</strong>. Replace this text with
+          your own essay. You can duplicate this file in the
+          <code style="font-size: 0.9em">articles/</code> folder for each new
+          piece, then add a link on <a href="index.html">articles/index.html</a>
+          and on the homepage under Perspectives.
+        </p>
+        <h2>Why a template</h2>
+        <p>
+          Static sites on GitHub Pages work well with one HTML file per article.
+          If you later prefer Markdown, you can add a small build step—or paste
+          rendered HTML here.
+        </p>
+        <p>
+          你也可以在这里直接写中文正文，与英文站点并存；合规话术请以你的法律顾问意见为准。
+        </p>
+      </div>
+    </article>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <p>© <span id="year"></span> Giraffe Digital Group.</p>
+        <p class="footer__legal">For information only. Not investment advice.</p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
