@@ -97,8 +97,16 @@ a:hover {
 
 .nav {
   display: flex;
-  gap: 28px;
+  flex-wrap: wrap;
+  gap: 16px 20px;
   align-items: center;
+  justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    gap: 28px;
+  }
 }
 
 .nav a {
