@@ -40,6 +40,10 @@ npx --yes serve site
 
 在 **Settings → Pages** 填写域名，并按提示在 DNS 服务商处添加 **CNAME** 或 **A** 记录；勾选 **Enforce HTTPS**。
 
+## Action 已成功但 https://xxx.github.io/xxx/ 仍 404？
+
+说明 **GitHub 还没在仓库里“打开 Pages 开关”**。请到 **Settings → Pages**，把 **Source** 设为 **Deploy from a branch**，分支选 **gh-pages**、目录 **/ (root)** 并保存。保存前 API 里 `has_pages` 为 false，站点不会对外提供。
+
 ## 说明
 
 - 文案与 “Aurora Capital” 仅为演示，请替换为经合规审核的内容。
