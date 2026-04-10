@@ -325,6 +325,17 @@ a:hover {
   color: var(--text-secondary);
 }
 
+/* Perspectives: centered block */
+.section--perspectives .section__head {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section--perspectives .section__foot {
+  text-align: center;
+}
+
 /* Articles */
 .article-grid {
   display: grid;
@@ -335,6 +346,45 @@ a:hover {
   .article-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+  }
+}
+
+.article-grid--centered {
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+@media (min-width: 700px) {
+  .article-grid--centered {
+    grid-template-columns: repeat(2, minmax(0, 340px));
+    justify-content: center;
+  }
+}
+
+/* Hire / collaborate: CN + EN same size */
+.bilingual-callout {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.bilingual-callout p {
+  font-size: 19px;
+  line-height: 1.65;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  margin: 0 0 1.35em;
+}
+
+.bilingual-callout p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .bilingual-callout p {
+    font-size: 21px;
+    line-height: 1.7;
   }
 }
 
