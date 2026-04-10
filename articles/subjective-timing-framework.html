@@ -1,53 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A framework for subjective timing — Giraffe Digital Group</title>
+    <title>主观择时的认知框架（示例）· Giraffe Digital Group</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
     <header class="header">
       <div class="header__inner">
         <a class="logo" href="../index.html">Giraffe Digital Group</a>
-        <nav class="nav" aria-label="Primary">
-          <a href="../index.html#strategy">Strategy</a>
-          <a href="../index.html#perspectives">Perspectives</a>
-          <a href="index.html">Articles</a>
+        <nav class="nav" aria-label="主导航">
+          <a href="../index.html#strategy">策略</a>
+          <a href="../index.html#perspectives">观点</a>
+          <a href="index.html">文章</a>
         </nav>
       </div>
     </header>
 
     <article class="article-page">
-      <a class="back-link" href="index.html">← All articles</a>
+      <a class="back-link" href="index.html">← 返回文章列表</a>
       <header>
-        <p class="article-meta">Perspectives · Placeholder · Replace with your date</p>
-        <h1>A framework for subjective timing</h1>
+        <p class="article-meta">观点 · 示例 · 请替换日期</p>
+        <h1>主观择时的认知框架（示例）</h1>
+        <p class="en-note" lang="en">
+          Sample piece — replace with your own title and body.
+        </p>
       </header>
       <div class="article-body">
         <p>
-          This is a <strong>sample article page</strong>. Replace this text with
-          your own essay. You can duplicate this file in the
-          <code style="font-size: 0.9em">articles/</code> folder for each new
-          piece, then add a link on <a href="index.html">articles/index.html</a>
-          and on the homepage under Perspectives.
+          本文为<strong>示例页面</strong>。请将正文替换为你的真实文章。每篇文章可复制本文件为新的
+          <code style="font-size: 0.9em">articles/*.html</code>，并在
+          <a href="index.html">文章列表</a>与首页「观点」区加入链接。
         </p>
-        <h2>Why a template</h2>
+        <h2>为何保留模板</h2>
         <p>
-          Static sites on GitHub Pages work well with one HTML file per article.
-          If you later prefer Markdown, you can add a small build step—or paste
-          rendered HTML here.
+          GitHub Pages 静态托管适合「一文一 HTML」。若日后改用
+          Markdown，可增加构建步骤，或将渲染后的 HTML 粘贴至此。
         </p>
-        <p>
-          你也可以在这里直接写中文正文，与英文站点并存；合规话术请以你的法律顾问意见为准。
+        <p class="en-note" lang="en">
+          Static one-file-per-article workflow; add a build step later if you
+          prefer Markdown.
         </p>
       </div>
     </article>
 
     <footer class="footer">
       <div class="footer__inner">
-        <p>© <span id="year"></span> Giraffe Digital Group.</p>
-        <p class="footer__legal">For information only. Not investment advice.</p>
+        <p>© <span id="year"></span> Giraffe Digital Group。</p>
+        <p class="footer__legal">仅供信息参考，不构成投资建议。</p>
+        <p class="footer__legal en-note" lang="en">
+          For information only. Not investment advice.
+        </p>
       </div>
     </footer>
     <script>
