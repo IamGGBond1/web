@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      # 首次部署若未在 Settings → Pages 里选过 GitHub Actions，API 会 404；开启 enablement 可尝试自动启用 Pages
+      # Avoid 404 on first run if Pages was never switched to "GitHub Actions" in repo Settings
       - uses: actions/configure-pages@v5
         with:
           enablement: true
