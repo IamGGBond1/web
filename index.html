@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+      content="Demo institutional asset manager landing page for GitHub Pages."
+    />
+    <title>Aurora Capital Partners — Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrap header__inner">
+        <a class="logo" href="#">Aurora Capital</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#approach">Approach</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="wrap hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow">Institutional · Demo site</p>
+            <h1>
+              Disciplined absolute-return strategies for
+              <em>global</em> markets.
+            </h1>
+            <p class="lede">
+              This is a static demonstration page for GitHub Pages deployment.
+              Replace all copy, branding, and disclosures with your own
+              compliance-approved content.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contact">Request introduction</a>
+              <a class="btn btn--ghost" href="#approach">Our approach</a>
+            </div>
+          </div>
+          <div class="hero__panel" aria-hidden="true">
+            <div class="stat">
+              <span class="stat__label">Demo metric</span>
+              <span class="stat__value">—</span>
+              <span class="stat__hint">Not indicative of performance</span>
+            </div>
+            <div class="stat">
+              <span class="stat__label">Markets</span>
+              <span class="stat__value">Global</span>
+              <span class="stat__hint">Liquid instruments</span>
+            </div>
+            <div class="stat">
+              <span class="stat__label">Investors</span>
+              <span class="stat__value">Qualified</span>
+              <span class="stat__hint">Professional clients only</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="approach">
+        <div class="wrap">
+          <h2 class="section__title">Approach</h2>
+          <p class="section__intro">
+            A concise framework you can adapt: risk-managed portfolio
+            construction, systematic overlays, and discretionary macro input—
+            described here only as placeholder structure.
+          </p>
+          <ul class="cards">
+            <li class="card">
+              <h3>Risk first</h3>
+              <p>
+                Position sizing and drawdown controls before return targets.
+              </p>
+            </li>
+            <li class="card">
+              <h3>Liquidity aware</h3>
+              <p>Capacity and execution constraints embedded in the process.</p>
+            </li>
+            <li class="card">
+              <h3>Transparent reporting</h3>
+              <p>Investor reporting workflows you define with your counsel.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section--muted" id="team">
+        <div class="wrap">
+          <h2 class="section__title">Team</h2>
+          <p class="section__intro">
+            Replace with bios and credentials. No real individuals are implied
+            by this demo.
+          </p>
+          <div class="team">
+            <article class="person">
+              <h3>Jane Mercer</h3>
+              <p class="person__role">Chief Investment Officer</p>
+              <p>Placeholder biography and prior experience.</p>
+            </article>
+            <article class="person">
+              <h3>David Okonkwo</h3>
+              <p class="person__role">Head of Risk</p>
+              <p>Placeholder biography and prior experience.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="wrap contact">
+          <h2 class="section__title">Contact</h2>
+          <p>
+            For a real site, use a monitored inbox or a compliant contact form.
+            Demo email:
+            <a href="mailto:ir@example.com">ir@example.com</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer__inner">
+        <p>
+          © <span id="year"></span> Aurora Capital Partners (demo). All rights
+          reserved.
+        </p>
+        <p class="footer__legal">
+          This page is a technical sample only—not an offer or solicitation.
+          Past performance is not indicative of future results.
+        </p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
