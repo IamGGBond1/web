@@ -28,7 +28,8 @@ npx --yes serve site
    ```
 
 3. 打开仓库 **Settings → Pages**：
-   - **Build and deployment → Source** 选择 **GitHub Actions**（不要选 “Deploy from a branch”，否则与当前 workflow 重复或冲突）。
+   - **Build and deployment → Source** 选择 **Deploy from a branch**（从分支部署）。
+   - **Branch** 选 **gh-pages**，文件夹选 **/ (root)**。首次需先推送一次 `main`，等 Actions 生成 `gh-pages` 分支后再选；若列表里没有 **gh-pages**，点一次 **Run workflow** 或任意小提交触发部署后再刷新设置页。
 4. 等待 **Actions** 里 “Deploy to GitHub Pages” 跑绿。站点地址一般为：
 
    `https://<用户名>.github.io/<仓库名>/`

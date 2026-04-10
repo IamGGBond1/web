@@ -1,4 +1,5 @@
-# Deploy static site in /site to GitHub Pages (requires repo Settings → Pages → Source: GitHub Actions).
+# Publishes /site to branch gh-pages. In repo Settings → Pages, choose "Deploy from a branch": gh-pages / (root).
+# Avoids configure-pages/deploy-pages (API 404 / environment approvals on some accounts).
 name: Deploy to GitHub Pages
 
 on:
@@ -7,9 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
@@ -17,18 +16,10 @@ concurrency:
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      # Avoid 404 on first run if Pages was never switched to "GitHub Actions" in repo Settings
-      - uses: actions/configure-pages@v5
+      - uses: peaceiris/actions-gh-pages@v4
         with:
-          enablement: true
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
