@@ -369,6 +369,11 @@ a:hover {
     grid-template-columns: repeat(2, minmax(0, 340px));
     justify-content: center;
   }
+
+  .article-grid--centered:has(> .article-card:only-child) {
+    grid-template-columns: minmax(0, 400px);
+    justify-content: center;
+  }
 }
 
 /* Hire / collaborate: CN + EN same size */
