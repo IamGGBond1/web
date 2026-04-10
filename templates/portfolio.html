@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>投资组合 - Giraffe Digital Group</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/portfolio.css') }}">
+</head>
+<body>
+    <!-- 页面头部 -->
+    <header>
+        <div class="container">
+            <h1>我们的投资组合</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('index') }}">主页</a></li>
+                    <li><a href="{{ url_for('portfolio') }}">投资组合</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 页面主体内容 -->
+    <main class="container">
+        <!-- 量化策略研究部分 -->
+        <section class="section">
+            <h2>量化策略研究</h2>
+            <p>这里将展示量化策略研究的相关内容...</p>
+        </section>
+
+        <!-- 市场观点分享部分 -->
+        <section class="section">
+            <h2>市场观点分享</h2>
+            
+            <!-- 如果用户已登录，显示 PDF 文件上传表单 -->
+            {% if user_is_logged_in %}
+            <div class="article-form">
+                <form action="{{ url_for('upload_pdf') }}" method="post" enctype="multipart/form-data">
+                    <input type="file" name="pdf_file" accept=".pdf" required>
+                    <button type="submit">上传</button>
+                </form>
+            </div>
+            {% else %}
+            <p>您需要登录才能上传 PDF 文件。</p>
+            {% endif %}
+
+            <!-- 展示已上传的 PDF 文件列表 -->
+            <div class="articles">
+                {% for article in articles %}
+                <div class="article">
+                    <a href="{{ url_for('static', filename='uploads/' + article.filename) }}" download>{{ article.filename }}</a>
+                    <small>上传者: {{ article.author }}</small>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <p>© 2023 Giraffe Digital Group. 保留所有权利。</p>
+        </div>
+    </footer>
+</body>
+</html>

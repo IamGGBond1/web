@@ -1,0 +1,58 @@
+/* 文章发布表单 */
+.article-form {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="file"] {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 已上传 PDF 文件展示 */
+.articles {
+    margin-top: 20px;
+}
+
+.article {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.article a {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.article a:hover {
+    text-decoration: underline;
+}
+
+.article small {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #888;
+    text-align: right;
+}
