@@ -71,6 +71,7 @@ body {
 
 .wrap--wide {
   width: min(1060px, 92vw);
+  margin-inline: auto;
 }
 
 a {
@@ -325,7 +326,7 @@ a:hover {
   color: var(--text-secondary);
 }
 
-/* Perspectives: centered block */
+/* Perspectives: centered block（卡片内文案亦居中，与栏目标题一致） */
 .section--perspectives .section__head {
   text-align: center;
   margin-left: auto;
@@ -333,6 +334,15 @@ a:hover {
 }
 
 .section--perspectives .section__foot {
+  text-align: center;
+}
+
+.section--perspectives .article-card {
+  text-align: center;
+  align-items: center;
+}
+
+.section--perspectives .article-card__excerpt {
   text-align: center;
 }
 
